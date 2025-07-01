@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Futuristic City</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <style>
+      body { margin: 0; overflow: hidden; }
+      canvas { display: block; }
+
+      #controls-panel, #objects-panel {
+        position: fixed;
+        top: 10px;
+        padding: 10px;
+        background-color: rgba(0,0,0,0.7);
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        border-radius: 5px;
+        z-index: 1000;
+        max-width: 200px;
+      }
+      #controls-panel {
+        left: 10px;
+      }
+      #objects-panel {
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module" src="/src/main.js"></script>
+
+    <div id="controls-panel">
+      <h3>Controls</h3>
+      <ul>
+        <li><b>1</b>: Start/Stop all Cars</li>
+        <li><b>D</b>: Start/Stop Drones</li>
+        <li><b>Arrow Keys</b>: Move Camera</li>
+        <li><b>V</b>: Side/Top View</li>
+        <li><b>Shift</b>: Speed Boost</li>
+        <li><b>Mouse Drag</b>: Orbit Camera</li>
+        <li><b>Scroll</b>: Zoom In/Out</li>
+      </ul>
+    </div>
+
+    <div id="objects-panel">
+      <h3>Objects</h3>
+      <ul>
+        <li>Buildings: 12</li>
+        <li>Cars: 4</li>
+        <li>Drones: 4</li>
+      </ul>
+    </div>
+
+  </body>
+</html>
